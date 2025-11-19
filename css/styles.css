@@ -237,8 +237,9 @@ a:focus {
 
 .button {
   --button-text-color: var(--color-white);
-  --button-border-color: hsl(from var(--color-white) h s l / 12%);
+  --button-border-color: hsl(from var(--color-white) h s l / 42%);
   --button-background-color: hsl(from var(--color-white) h s l / 6%);
+  --button-box-shadow: hsl(from var(--color-accent) h s l / 30%);
 
   display: inline-block;
   padding: 12px 36px;
@@ -257,6 +258,7 @@ a:focus {
   &:hover,
   &:focus {
     --button-border-color: var(--color-accent);
+    box-shadow: 0 0 18px var(--button-box-shadow);
   }
 }
 
